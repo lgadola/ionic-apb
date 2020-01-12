@@ -1,0 +1,26 @@
+{
+  "generator-ngx-rocket": {
+    "version": "7.1.0",
+    "props": {
+      "location": "path",
+      "strict": false,
+      "skipInstall": false,
+      "skipQuickstart": false,
+      "initGit": true,
+      "appName": "ionic-abp",
+      "target": ["web"],
+      "pwa": true,
+      "ui": "ionic",
+      "layout": "tabs",
+      "auth": true,
+      "lazy": true,
+      "angulartics": false,
+      "tools": ["prettier", "hads"],
+      "utility": ["moment"],
+      "projectName": "ionic-abp",
+      "packageManager": "npm",
+      "mobile": [],
+      "desktop": []
+    }
+  }
+}
