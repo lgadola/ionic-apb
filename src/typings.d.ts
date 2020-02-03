@@ -1,10 +1,3 @@
-///<reference path="../node_modules/@types/jquery/index.d.ts"/>
-///<reference path="../node_modules/abp-web-resources/Abp/Framework/scripts/abp.d.ts"/>
-///<reference path="../node_modules/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.d.ts"/>
-///<reference path="../node_modules/abp-web-resources/Abp/Framework/scripts/libs/abp.signalr.d.ts"/>
-///<reference path="../node_modules/moment/moment.d.ts"/>
-///<reference path="../node_modules/@types/moment-timezone/index.d.ts"/>
-
 /*
  * Extra typings definitions
  */
@@ -16,4 +9,13 @@ declare module '*.json';
 declare var module: NodeModule;
 interface NodeModule {
   id: string;
+}
+declare module 'devextreme/core/utils/deferred' {
+  const value: any;
+  export default value;
+}
+
+declare module 'devextreme/core/utils/ajax' {
+  const value: any;
+  export default value;
 }
