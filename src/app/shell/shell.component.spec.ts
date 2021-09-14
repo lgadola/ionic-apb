@@ -29,19 +29,19 @@ describe('ShellComponent', () => {
         HomeModule,
         AboutModule,
         SettingsModule,
-        CoreModule
+        CoreModule,
       ],
       providers: [
         { provide: AuthenticationService, useClass: MockAuthenticationService },
-        { provide: CredentialsService, useClass: MockCredentialsService }
+        { provide: CredentialsService, useClass: MockCredentialsService },
       ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
-      declarations: [ShellComponent]
+      declarations: [ShellComponent],
     })
       .overrideComponent(ShellComponent, {
         set: {
-          entryComponents: [HomeComponent, AboutComponent, SettingsComponent]
-        }
+          entryComponents: [HomeComponent, AboutComponent, SettingsComponent],
+        },
       })
       .compileComponents();
   }));

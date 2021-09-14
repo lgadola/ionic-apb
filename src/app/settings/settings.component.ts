@@ -9,7 +9,7 @@ import { AuthenticationService, CredentialsService, I18nService } from '@app/cor
 @Component({
   selector: 'app-settings',
   templateUrl: './settings.component.html',
-  styleUrls: ['./settings.component.scss']
+  styleUrls: ['./settings.component.scss'],
 })
 export class SettingsComponent implements OnInit {
   constructor(
@@ -42,25 +42,25 @@ export class SettingsComponent implements OnInit {
   async changeLanguage() {
     const alertController = await this.alertController.create({
       header: this.translateService.instant('Change language'),
-      inputs: this.i18nService.supportedLanguages.map(language => ({
+      inputs: this.i18nService.supportedLanguages.map((language) => ({
         type: 'radio' as TextFieldTypes,
         name: language,
         label: language,
         value: language,
-        checked: language === this.i18nService.language
+        checked: language === this.i18nService.language,
       })),
       buttons: [
         {
           text: this.translateService.instant('Cancel'),
-          role: 'cancel'
+          role: 'cancel',
         },
         {
           text: this.translateService.instant('Ok'),
-          handler: language => {
+          handler: (language) => {
             this.i18nService.language = language;
-          }
-        }
-      ]
+          },
+        },
+      ],
     });
     alertController.present();
   }

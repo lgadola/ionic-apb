@@ -9,6 +9,6 @@ const routes: Routes = [{ path: 'login', component: LoginComponent, data: { titl
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
-  providers: []
+  providers: [],
 })
 export class LoginRoutingModule {}

@@ -14,7 +14,7 @@ export interface LoginContext {
  * The login/logout methods should be replaced with proper implementation.
  */
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthenticationService {
   constructor(private credentialsService: CredentialsService) {}
@@ -28,7 +28,7 @@ export class AuthenticationService {
     // Replace by proper authentication call
     const data = {
       username: context.username,
-      token: '123456'
+      token: '123456',
     };
     this.credentialsService.setCredentials(data, context.remember);
     return of(data);

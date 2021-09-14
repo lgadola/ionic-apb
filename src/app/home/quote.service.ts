@@ -4,7 +4,7 @@ import { Observable, of } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 
 const routes = {
-  quote: (c: RandomQuoteContext) => `/jokes/random?category=${c.category}`
+  quote: (c: RandomQuoteContext) => `/jokes/random?category=${c.category}`,
 };
 
 export interface RandomQuoteContext {
@@ -13,7 +13,7 @@ export interface RandomQuoteContext {
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class QuoteService {
   constructor(private httpClient: HttpClient) {}

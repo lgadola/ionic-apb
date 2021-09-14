@@ -18,7 +18,7 @@ describe('SettingsComponent', () => {
       imports: [RouterTestingModule, TranslateModule.forRoot(), IonicModule.forRoot(), CoreModule, SharedModule],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
       declarations: [SettingsComponent],
-      providers: [Platform, AlertController, ActionSheetController]
+      providers: [Platform, AlertController, ActionSheetController],
     }).compileComponents();
   }));
 

@@ -13,9 +13,9 @@ exports.config = {
       binary: process.env.PROTRACTOR_CHROME_BIN || undefined,
       args: process.env.PROTRACTOR_CHROME_ARGS ? JSON.parse(process.env.PROTRACTOR_CHROME_ARGS) : ['lang=en-US'],
       prefs: {
-        intl: { accept_languages: 'en-US' }
-      }
-    }
+        intl: { accept_languages: 'en-US' },
+      },
+    },
   },
   // Only works with Chrome and Firefox
   directConnect: true,
@@ -24,14 +24,14 @@ exports.config = {
   jasmineNodeOpts: {
     showColors: true,
     defaultTimeoutInterval: 30000,
-    print: function() {}
+    print: function () {},
   },
   onPrepare() {
     require('ts-node').register({
-      project: require('path').join(__dirname, './tsconfig.e2e.json')
+      project: require('path').join(__dirname, './tsconfig.e2e.json'),
     });
 
     // Better console spec reporter
     jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
-  }
+  },
 };

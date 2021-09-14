@@ -17,7 +17,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PlatformLocation } from '@angular/common';
 
-import * as devextremeAjax from 'devextreme/core/utils/ajax';
+import * as devextremeAjax from 'devextreme/core/utils/ajax.js';
 import { sendRequestFactory } from '../app/ng-http-client-helper';
 
 @NgModule({
@@ -34,11 +34,11 @@ import { sendRequestFactory } from '../app/ng-http-client-helper';
     HomeModule,
     SettingsModule,
     LoginModule,
-    AppRoutingModule // must be imported as the last module as it contains the fallback route
+    AppRoutingModule, // must be imported as the last module as it contains the fallback route
   ],
   declarations: [AppComponent],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {
   constructor(httpClient: HttpClient) {

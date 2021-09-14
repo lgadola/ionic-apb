@@ -17,7 +17,7 @@ describe('HomeComponent', () => {
       imports: [IonicModule.forRoot(), CoreModule, SharedModule, HttpClientTestingModule],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
       declarations: [HomeComponent],
-      providers: [QuoteService]
+      providers: [QuoteService],
     }).compileComponents();
   }));
 

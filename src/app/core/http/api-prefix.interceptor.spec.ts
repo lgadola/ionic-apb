@@ -17,9 +17,9 @@ describe('ApiPrefixInterceptor', () => {
         {
           provide: HTTP_INTERCEPTORS,
           useClass: ApiPrefixInterceptor,
-          multi: true
-        }
-      ]
+          multi: true,
+        },
+      ],
     });
 
     http = TestBed.get(HttpClient);

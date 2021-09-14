@@ -12,6 +12,6 @@ import { QuoteService } from './quote.service';
 @NgModule({
   imports: [CommonModule, TranslateModule, CoreModule, SharedModule, IonicModule, HomeRoutingModule],
   entryComponents: [HomeComponent],
-  declarations: [HomeComponent]
+  declarations: [HomeComponent],
 })
 export class HomeModule {}

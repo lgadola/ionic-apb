@@ -22,17 +22,17 @@ export const environment = {
   localeMappings: [
     {
       from: 'pt-BR',
-      to: 'pt'
+      to: 'pt',
     },
     {
       from: 'zh-CN',
-      to: 'zh'
+      to: 'zh',
     },
     {
       from: 'he-IL',
-      to: 'he'
-    }
-  ]
+      to: 'he',
+    },
+  ],
 };
 
 /*

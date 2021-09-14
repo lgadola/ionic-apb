@@ -9,7 +9,7 @@ import { HttpCacheService } from './http-cache.service';
  * Use ExtendedHttpClient fluent API to configure caching for each request.
  */
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CacheInterceptor implements HttpInterceptor {
   private forceUpdate = false;
@@ -42,13 +42,13 @@ export class CacheInterceptor implements HttpInterceptor {
         subscriber.complete();
       } else {
         next.handle(request).subscribe(
-          event => {
+          (event) => {
             if (event instanceof HttpResponse) {
               this.httpCacheService.setCacheData(request.urlWithParams, event);
             }
             subscriber.next(event);
           },
-          error => subscriber.error(error),
+          (error) => subscriber.error(error),
           () => subscriber.complete()
         );
       }

@@ -8,7 +8,7 @@ import { environment } from '@env/environment';
  * Prefixes all requests not starting with `http[s]` with `environment.serverUrl`.
  */
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ApiPrefixInterceptor implements HttpInterceptor {
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {

@@ -12,7 +12,7 @@ describe('AboutComponent', () => {
     TestBed.configureTestingModule({
       imports: [IonicModule.forRoot()],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
-      declarations: [AboutComponent]
+      declarations: [AboutComponent],
     }).compileComponents();
   }));
 

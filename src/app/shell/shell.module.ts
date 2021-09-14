@@ -9,6 +9,6 @@ import { ShellComponent } from './shell.component';
 @NgModule({
   imports: [CommonModule, TranslateModule, IonicModule, RouterModule],
   entryComponents: [ShellComponent],
-  declarations: [ShellComponent]
+  declarations: [ShellComponent],
 })
 export class ShellModule {}

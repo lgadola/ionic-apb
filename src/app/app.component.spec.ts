@@ -13,7 +13,7 @@ describe('AppComponent', () => {
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
       imports: [IonicModule.forRoot(), RouterTestingModule, TranslateModule.forRoot(), CoreModule],
       declarations: [AppComponent],
-      providers: []
+      providers: [],
     }).compileComponents();
   }));
 

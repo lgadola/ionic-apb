@@ -15,7 +15,7 @@ class MockTranslateService {
     this.currentLang = language;
     this.onLangChange.next({
       lang: this.currentLang,
-      translations: {}
+      translations: {},
     });
   }
 
@@ -33,7 +33,7 @@ describe('I18nService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [I18nService, { provide: TranslateService, useClass: MockTranslateService }]
+      providers: [I18nService, { provide: TranslateService, useClass: MockTranslateService }],
     });
 
     i18nService = TestBed.get(I18nService);

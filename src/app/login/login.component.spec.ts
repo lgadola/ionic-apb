@@ -21,11 +21,11 @@ describe('LoginComponent', () => {
         RouterTestingModule,
         TranslateModule.forRoot(),
         ReactiveFormsModule,
-        CoreModule
+        CoreModule,
       ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
       providers: [Platform, LoadingController],
-      declarations: [LoginComponent]
+      declarations: [LoginComponent],
     }).compileComponents();
   }));
 

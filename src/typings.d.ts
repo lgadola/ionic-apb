@@ -15,7 +15,7 @@ declare module 'devextreme/core/utils/deferred' {
   export default value;
 }
 
-declare module 'devextreme/core/utils/ajax' {
+declare module 'devextreme/core/utils/ajax/*' {
   const value: any;
   export default value;
 }

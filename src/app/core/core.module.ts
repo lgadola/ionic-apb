@@ -12,13 +12,13 @@ import { HttpService } from './http/http.service';
   providers: [
     {
       provide: HttpClient,
-      useClass: HttpService
+      useClass: HttpService,
     },
     {
       provide: RouteReuseStrategy,
-      useClass: RouteReusableStrategy
-    }
-  ]
+      useClass: RouteReusableStrategy,
+    },
+  ],
 })
 export class CoreModule {
   constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
