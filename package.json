@@ -54,7 +54,7 @@
     "@types/jasminewd2": "^2.0.10",
     "@types/node": "^16.9.1",
     "codelyzer": "^6.0.2",
-    "hads": "^3.0.1",
+    "hads": "^3.0.3",
     "htmlhint": "^0.15.1",
     "https-proxy-agent": "^5.0.0",
     "husky": "^7.0.2",
